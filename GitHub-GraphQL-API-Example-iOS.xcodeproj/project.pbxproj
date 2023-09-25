@@ -16,6 +16,7 @@
 		12A3242E1DFF499800D905E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A3242D1DFF499800D905E7 /* Main.storyboard */; };
 		12A324301E0215E400D905E7 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 12A3242F1E0215E400D905E7 /* RepositoryDetails.graphql */; };
 		12F01AA41DFD05CD00EB0547 /* RepositoriesViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 12F01AA31DFD05CD00EB0547 /* RepositoriesViewController.graphql */; };
+		560DCE722AC1D4BF002067FF /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 560DCE712AC1D4BF002067FF /* schema.json */; };
 		DDF8A0B224D643AB0065A795 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = DDF8A0B124D643AB0065A795 /* Apollo */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		12A3242D1DFF499800D905E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		12A3242F1E0215E400D905E7 /* RepositoryDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RepositoryDetails.graphql; sourceTree = "<group>"; };
 		12F01AA31DFD05CD00EB0547 /* RepositoriesViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RepositoriesViewController.graphql; sourceTree = "<group>"; };
+		560DCE712AC1D4BF002067FF /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = "GitHub-GraphQL-API-Example-iOS/schema.json"; sourceTree = SOURCE_ROOT; };
+		560DCE742AC1D534002067FF /* Country.graphql.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = Country.graphql.exp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +68,10 @@
 		120103721DFBE26E00E8128E /* GitHub-GraphQL-API-Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				560DCE6F2AC1D3B8002067FF /* Networking */,
 				120103731DFBE26E00E8128E /* AppDelegate.swift */,
 				120103751DFBE26E00E8128E /* RepositoriesViewController.swift */,
 				12A3242B1DFE56EC00D905E7 /* RepositoryCell.swift */,
-				1201038A1DFBF28200E8128E /* API.swift */,
 				12A3242D1DFF499800D905E7 /* Main.storyboard */,
 				12F01AA31DFD05CD00EB0547 /* RepositoriesViewController.graphql */,
 				12A3242F1E0215E400D905E7 /* RepositoryDetails.graphql */,
@@ -84,6 +87,32 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		560DCE6F2AC1D3B8002067FF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				560DCE702AC1D3C7002067FF /* GraphQL */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		560DCE702AC1D3C7002067FF /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				560DCE732AC1D50D002067FF /* Queries */,
+				560DCE712AC1D4BF002067FF /* schema.json */,
+				1201038A1DFBF28200E8128E /* API.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		560DCE732AC1D50D002067FF /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				560DCE742AC1D534002067FF /* Country.graphql.exp */,
+			);
+			path = Queries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +187,7 @@
 				1201037B1DFBE26E00E8128E /* Assets.xcassets in Resources */,
 				12F01AA41DFD05CD00EB0547 /* RepositoriesViewController.graphql in Resources */,
 				12A3242E1DFF499800D905E7 /* Main.storyboard in Resources */,
+				560DCE722AC1D4BF002067FF /* schema.json in Resources */,
 				12A324301E0215E400D905E7 /* RepositoryDetails.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
